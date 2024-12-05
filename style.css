@@ -9,13 +9,14 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 /* Header */
 header {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 header .container {
@@ -26,8 +27,9 @@ header .container {
 }
 
 header h1.logo {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 header nav ul {
@@ -36,33 +38,36 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
 }
 
 header nav ul li a:hover {
-    text-decoration: underline;
+    border-bottom: 2px solid #ff6f61;
 }
 
 /* Bannière */
 .banner {
-    background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+    background: url('https://via.placeholder.com/1600x800') center/cover no-repeat;
     color: white;
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
 }
 
-.banner h2 {
+.banner-content h2 {
     font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-.banner p {
+.banner-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
@@ -70,10 +75,10 @@ header nav ul li a:hover {
 .banner .btn {
     background-color: #ff6f61;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 30px;
     text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
+    font-size: 1.1rem;
+    border-radius: 25px;
 }
 
 .banner .btn:hover {
@@ -82,7 +87,7 @@ header nav ul li a:hover {
 
 /* Section Produits */
 .products {
-    padding: 50px 0;
+    padding: 60px 0;
     background-color: white;
 }
 
@@ -92,7 +97,9 @@ header nav ul li a:hover {
 
 .products h2 {
     font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
 .product-grid {
@@ -105,34 +112,41 @@ header nav ul li a:hover {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 250px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
 }
 
 .product-card img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .product-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: 15px;
+    color: #333;
 }
 
 .product-card p {
     font-size: 1rem;
+    color: #777;
     margin-top: 10px;
-    color: #555;
 }
 
 .product-card .btn {
     margin-top: 15px;
     background-color: #ff6f61;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 25px;
     text-decoration: none;
+    font-size: 1rem;
     border-radius: 5px;
 }
 
@@ -143,7 +157,7 @@ header nav ul li a:hover {
 /* Témoignages */
 .testimonials {
     background-color: #f9f9f9;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .testimonials .container {
@@ -152,39 +166,44 @@ header nav ul li a:hover {
 
 .testimonials h2 {
     font-size: 2.5rem;
+    font-weight: bold;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 .testimonial {
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .testimonial cite {
     display: block;
     margin-top: 10px;
-    color: #555;
+    font-weight: bold;
+    color: #333;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #1e1e1e;
     color: white;
-    padding: 20px 0;
+    padding: 30px 20px;
     text-align: center;
 }
 
 footer .social-links {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 footer .social-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
+    font-size: 1.2rem;
 }
 
 footer .social-links a:hover {
     text-decoration: underline;
 }
+
 
