@@ -1,213 +1,141 @@
-/* Réinitialisation de base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Import police */
+@import 'https://fonts.googleapis.com/css2?family=Montserrat&display=swap';
 
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Header */
-header {
-    background-color: #1e1e1e;
-    color: white;
-    padding: 20px 0;
-}
-
-header .container {
+/* CSS PC */
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-header h1.logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 30px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-
-header nav ul li a:hover {
-    border-bottom: 2px solid #ff6f61;
-}
-
-/* Bannière */
-.banner {
-    background: url('https://via.placeholder.com/1600x800?text=Basketball') center/cover no-repeat;
-    color: white;
-    padding: 120px 20px;
-    text-align: center;
-}
-
-.banner-content h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.banner-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.banner .btn {
-    background-color: #ff6f61;
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    font-size: 1.1rem;
-    border-radius: 25px;
-}
-
-.banner .btn:hover {
-    background-color: #ff4e42;
-}
-
-/* Section Produits */
-.products {
-    padding: 60px 0;
     background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.products .container {
-    text-align: center;
-}
-
-.products h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    text-transform: uppercase;
-}
-
-.product-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.product-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: translateY(-10px);
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product-card h3 {
-    font-size: 1.8rem;
-    margin-top: 15px;
-    color: #333;
-}
-
-.product-card p {
-    font-size: 1rem;
-    color: #777;
-    margin-top: 10px;
-}
-
-.product-card .btn {
-    margin-top: 15px;
-    background-color: #ff6f61;
-    color: white;
-    padding: 10px 25px;
+/* Enlève le soulignement des liens */
+a {
     text-decoration: none;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-
-.product-card .btn:hover {
-    background-color: #ff4e42;
-}
-
-/* Témoignages */
-.testimonials {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-}
-
-.testimonials .container {
-    text-align: center;
-}
-
-.testimonials h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-}
-
-.testimonial {
-    font-style: italic;
-    margin-bottom: 30px;
-}
-
-.testimonial cite {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-}
-
-/* Footer */
-footer {
-    background-color: #1e1e1e;
+    padding-right: 1px;
     color: white;
-    padding: 30px 20px;
-    text-align: center;
 }
 
-footer .social-links {
-    margin-top: 15px;
+a:hover {
+    color: #c0fdff;
 }
 
-footer .social-links a {
+/* Partie gauche */
+.leftBlock {
+    float: left;
+    background-color: #90a4ff;
+    padding: 2%;
+    overflow-x: auto;
+}
+
+/* Photo */
+.picture {
+    padding-bottom: 12%;
+    padding-left: 10%;
+}
+
+.rectangle {
+    width:170px;
+    height:170px;
+    background-color:#c0fdff;
+}
+
+/* Nom prénom profession */
+.name {
+    font-size: 25px;
     color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1.2rem;
+    text-shadow: 2px 2px grey;
 }
 
-footer .social-links a:hover {
-    text-decoration: underline;
+.name .subname {
+    font-size: 15px;
+    text-shadow: 2px 2px grey;
 }
 
-footer .social-links a:hover {
-    text-decoration: underline;
+/* Profil */
+.supertitle {
+    font-size: 21px;
+    color: #c0fdff;
+    padding-top: 10%;
+    text-shadow: 1px 1px #72f0f5;
 }
 
+.aboutme {
+    font-size: 13px;
+    color: #e6e6e6;
+}
+
+/* Coordonnées/Hobbies */
+.leftBlock .uppertitle {
+
+    font-size: 21px;
+    color: #c0fdff;
+    text-shadow: 1px 1px #72f0f5;
+}
+
+.location {
+    font-size: 13px;
+    color: #e6e6e6;
+}
+
+.hobbies {
+    font-size: 13px;
+    color: #e6e6e6;
+}
+
+/* Barre sous les titres */
+.leftBar {
+    box-shadow: 2px 2px 0px 0px #72f0f5;
+}
+
+/* Partie droite */
+.rightBlock {
+    float: right;
+    background-color: #c0fdff;
+    margin-right: -25%;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 1%;
+    overflow-x: auto;
+}
+
+/* Compétences/Expérience/Formations */
+.rightBlock .uppertitle {
+    font-size: 21px;
+    color: #90a4ff;
+    text-shadow: 1px 1px #5272fd;
+}
+
+/* Titre */
+.rightBlock .title {
+    font-size: 19px;
+}
+
+/* Date */
+.rightBlock .subtitle {
+    font-size: 15px;
+    color: #585656;
+}
+
+/* Texte */
+.rightBlock .text {
+    font-size: 13px;
+    color: #585656;
+}
+
+/* Barre sous les titres */
+.rightBlock .rightBar {
+    box-shadow: 2px 2px 0px 0px #5272fd;
+}
+
+/* Responsive téléphone (testé uniquement sur Samsung Galaxy S8 et page responsive web)*/
+@media screen and (max-width: 800px) {
+    .rectangle {
+        width:120px;
+        height:120px;
+    }
+
+    .leftBlock {
+        padding-right: 50px;
+    }
+  } 
 
